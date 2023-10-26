@@ -17,7 +17,7 @@ export default {
     // - ctx: An object containing the context associated with the Worker.
     async fetch(request, env, ctx) {
         // Call `routeRequest` to handle the incoming request and return a Response object.
-        return routeRequest(env, request);
+        return routeRequest(request, env, ctx);
     },
 
     // Uncomment this code block if you want to use scheduled tasks.

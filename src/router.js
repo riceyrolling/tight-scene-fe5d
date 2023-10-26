@@ -5,9 +5,10 @@ import { getMedia } from "./routes/mediaRoute.js";
 
 // Function to route incoming HTTP requests based on the URL path.
 // Parameters:
-// - env: An object containing bindings (like KV namespaces and Durable Objects) associated with the Worker.
 // - request: The incoming HTTP request object.
-export async function routeRequest(env, request) {
+// - env: An object containing bindings (like KV namespaces and Durable Objects) associated with the Worker.
+// - ctx: An object containing the context associated with the Worker.
+export async function routeRequest(request, env, ctx) {
     // Parse the URL to extract the pathname.
     const url = new URL(request.url);
     const path = url.pathname.split("/").slice(1);
@@ -16,7 +17,7 @@ export async function routeRequest(env, request) {
     switch (path[0]) {
         case "todo":
             // Handle '/todo' route.
-            return getTodo();
+            return getTodo(request, ctx);
         case "media":
             // Handle '/media' route.
             return getMedia();

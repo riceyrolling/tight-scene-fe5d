@@ -1,6 +1,6 @@
 # Cloudflare Workers: A Comprehensive Guide 🚀
 
-This repository contains the example code for the Medium article: "[The Ultimate Guide to Cloudflare Workers](#)". In this article, we explore the capabilities of Cloudflare Workers, an edge computing service that allows you to run your code closer to the user.
+This repository contains the example code for the Medium article: "[The Ultimate Guide to Cloudflare Workers](https://medium.com/@calebrocca/da2469af7bc0)". In this article, we explore the capabilities of Cloudflare Workers, an edge computing service that allows you to run your code closer to the user.
 
 TThe application has two routes:
 - `/todo` - returns a JSON todo list from an API source.

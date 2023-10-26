@@ -2,6 +2,8 @@ name = "tight-scene-fe5d"
 main = "src/index.js"
 compatibility_date = "2023-10-25"
 
+routes = [ { pattern = "tight-scene-fe5d.beefie.xyz", custom_domain = true } ]
+
 # Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
 # Note: Use secrets to store sensitive data.
 # Docs: https://developers.cloudflare.com/workers/platform/environment-variables
